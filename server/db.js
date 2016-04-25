@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dbUrl = 'mongodb:localhost/test';
+const dbUrl = 'mongodb://localhost/test';
 const db = mongoose.connection;
 
 const Schema = mongoose.Schema;
@@ -20,5 +20,3 @@ db.on('error', console.error.bind(console, 'connection error: '));
 db.once('open', function () {
   console.log('Connected to database');
 });
-
-module.exports = Clothing;
