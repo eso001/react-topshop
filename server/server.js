@@ -6,7 +6,6 @@ const deleteItem = require('./routes/deleteItemRoute.js');
 const displayItem = require('./routes/displayItemRoute.js');
 const renderAll = require('./routes/renderAllRoute.js');
 const router = express.Router();
-// const cors = require('cors');
 const bodyParser = require('body-parser');
 
 
