@@ -12,7 +12,7 @@ const app = express();
 module.exports = {
     renderAll: {
     	get: function(req, res){
-				console.log('inside render all get request ', req);
+            console.log("WOW IT IS REALLY RENDERALLINGGINGG ");
     		Clothing.find({}, function(err,data){
     			if (err){
     				throw err; 
@@ -24,5 +24,4 @@ module.exports = {
     		res.send('test to renderAllController');
     	}
     }
-  
 }

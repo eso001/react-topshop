@@ -7,7 +7,7 @@ export default function (state = INITIAL_STATE, action) {
   switch(action.type) {
     case FETCH_ITEMS:
       console.log('action payload', action.payload)
-      return { ...state, item: action.payload.item};
+      return { ...state, item: action.payload.data};
     default:
       return state;
   }
