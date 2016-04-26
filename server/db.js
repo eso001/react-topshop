@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dbUrl = 'mongodb://localhost/test';
+const dbUrl = 'mongodb://localhost/store';
 const db = mongoose.connection;
 
 const Schema = mongoose.Schema;

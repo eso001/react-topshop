@@ -1,17 +1,17 @@
 const express = require('express');
-const port = 8080;
+const port = 8123;
 
 const addItem = require('./routes/addItemRoute.js');
 const deleteItem = require('./routes/deleteItemRoute.js');
 const displayItem = require('./routes/displayItemRoute.js');
 const renderAll = require('./routes/renderAllRoute.js');
 const router = express.Router();
-// const cors = require('cors');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 
 
 const app = express();
-// app.use(cors());
+app.use(cors());
 // app.use(bodyParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
