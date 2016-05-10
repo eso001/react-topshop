@@ -1,4 +1,4 @@
-import { FETCH_ITEMS } from '../actions/index';
+import { FETCH_ITEMS} from '../actions/index';
 
 const INITIAL_STATE = { all: [], item: null};
 
