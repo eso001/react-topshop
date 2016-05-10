@@ -8,7 +8,7 @@ export default function (state = INITIAL_STATE, action) {
     case FETCH_ITEMS:
       console.log('action payload', action.payload)
       return { ...state, item: action.payload.data};
-    default:
+    default: 
       return state;
   }
 }
