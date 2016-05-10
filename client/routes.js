@@ -9,5 +9,5 @@ export default (
 		<Route path='/' component={App} >
 			<IndexRoute component={renderAll} />
 			<Route path="item/new" component={addItem} />
-		</Route>	
+		</Route>
 	)
